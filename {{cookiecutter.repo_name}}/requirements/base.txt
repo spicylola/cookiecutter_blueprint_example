@@ -1,0 +1,2 @@
+# Internal libs
+Predikto_Common_GraphQL

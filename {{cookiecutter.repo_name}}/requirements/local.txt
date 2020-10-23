@@ -1,0 +1,9 @@
+-r dev.txt
+
+## Local development tools
+autoflake
+flask-shell-ipython
+ipdb
+ipython
+pre-commit
+gql
