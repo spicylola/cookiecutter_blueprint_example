@@ -1,0 +1,4 @@
+name: {{cookiecutter.repo_name}}
+
+dependencies:
+  - python==3.7

@@ -1,0 +1,12 @@
+export FLASK_APP={{cookiecutter.repo_name}}__init__.py
+export FLASK_DEBUG=True
+export ENABLE_IDE=True
+export DB_DEFAULT_PASS=admin
+export DB_USER={{cookiecutter.db_username}}
+export DB_PASS={{cookiecutter.db_password}}
+export DB_DATABASE=test_{{cookiecutter.repo_name}}
+export DB_HOST=localhost
+export DB_PORT={{cookiecutter.test_db_port}}
+export DB_AUTOCREATE=True
+export SQLALCHEMY_ECHO=False
+export SQLALCHEMY_TRACK_MODIFICATIONS=False

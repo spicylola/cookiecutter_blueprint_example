@@ -1,0 +1,20 @@
+version: "3"
+services:
+  test_db:
+    image: "postgres:9.5"
+    container_name: "test_{{cookiecutter.repo_name}}"
+    ports:
+      - "{{cookiecutter.test_db_port}}:5432"
+    environment:
+      - POSTGRES_DB=test_{{cookiecutter.repo_name}}
+      - POSTGRES_USER={{cookiecutter.db_username}}
+      - POSTGRES_PASSWORD={{cookiecutter.db_password}}
+  db:
+    image: "postgres:9.5"
+    container_name: "{{cookiecutter.repo_name}}_local"
+    ports:
+      - "{{cookiecutter.db_port}}:5432"
+    environment:
+      - POSTGRES_DB={{cookiecutter.repo_name}}
+      - POSTGRES_USER={{cookiecutter.db_username}}
+      - POSTGRES_PASSWORD={{cookiecutter.db_password}}
