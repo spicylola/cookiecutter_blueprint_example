@@ -1,0 +1,11 @@
+{
+    "full_name": "Damilola Shonaike",
+    "email": "damilola.shonaike@utc.com",
+    "repo_name": "api_blueprint",
+    "version": "2020.9.1",
+    "db_username": "predikto",
+    "db_password": "qwerty",
+    "test_db_port": 54321,
+    "db_port": 5432,
+    "model_files":{"values":["model1.py", "model2.py","model_3.py"]}
+}
